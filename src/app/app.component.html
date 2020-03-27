@@ -1,3 +1,17 @@
+<h1>Issue #1</h1>
+
 <div>
-  {{'test' | translate}}
+  {{ 'value' | testPipe: ('test1' | translate) }}
+</div>
+
+<h1>Issue #2</h1>
+
+<div>
+  {{ test2 | json }}
+</div>
+
+<h1>Issue #3</h1>
+
+<div>
+  <app-test [test]="{ property: 'test3' | translate}"></app-test>
 </div>
